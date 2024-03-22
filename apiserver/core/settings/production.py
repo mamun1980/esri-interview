@@ -6,7 +6,10 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 SECRET_KEY = 'django-insecure-xzht*x1h-+(%jezrv$j*3g1dowf+y4ht&se1248%x@36f4cju!'
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '52.221.250.122'
+    '52.221.250.122:8000'
+]
 
 
 DATABASES = {
