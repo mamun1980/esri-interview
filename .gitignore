@@ -1,0 +1,4 @@
+apiserver/.venv
+apiserver/**/*.py
+
+client/node_modules
