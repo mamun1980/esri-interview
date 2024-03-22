@@ -33,12 +33,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173"
-]
 
-CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'http://*.127.0.0.1', 'http://52.221.250.122:8000']
 
 ROOT_URLCONF = 'core.urls'
 
@@ -114,6 +109,17 @@ MEDIA_ROOT = BASE_DIR / 'public/media'
 
 SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 SECURE_REFERRER_POLICY = None
+
+CORS_ORIGIN_ALLOW_ALL = True   
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    'http://52.221.250.122:8000',
+    'http://52.221.250.122:5173'
+]
+
+CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'http://*.127.0.0.1', 'http://52.221.250.122:8000']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
