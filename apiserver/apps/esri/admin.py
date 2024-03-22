@@ -13,6 +13,8 @@ from .models import EsriInterview
 @admin.register(EsriInterview)
 class EsriInterviewAdmin(ExtraButtonsMixin, admin.ModelAdmin):
     list_display = ['block', 'usi_code', 'region', 'length_km', 'acquisition_year', 'processing_year']
+    list_filter = ['region']
+    search_fields = ['block']
 
     def get_urls(self) -> list[URLPattern]:
         urls = super().get_urls()
