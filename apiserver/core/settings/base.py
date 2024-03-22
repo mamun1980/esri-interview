@@ -38,6 +38,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173"
 ]
 
+CSRF_TRUSTED_ORIGINS = ['https://*.127.0.0.1', 'http://*.127.0.0.1', 'http://52.221.250.122:8000']
+
 ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
