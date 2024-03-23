@@ -1,0 +1,16 @@
+
+input {
+  height: 35px;
+  display: inline;
+  margin-right: 10px;
+  width: 50%;
+}
+
+
+input:focus {
+  outline: none;
+}
+
+#search-icon {
+  color: royalblue;
+}

@@ -1,26 +1,22 @@
-import { Autocomplete, Container, Grid, Paper, TextField } from '@mui/material'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
-import ButtonAppBar from './components/Navbar'
-import DataTable from './components/DataTable'
+import EsriData from './components/EsriData'
+import { Grid } from '@mui/material'
 
 function App() {
 
     return (
-        <>
-            <Grid container spacing={2} justifyContent="center" alignItems="center">
-                <Grid item xs={8}>
-                    <Paper elevation={3} className=''>
-                        
-                    <TextField  label="Search" variant="standard" fullWidth  />
-                    </Paper>
-                </Grid>
+        <div>
+            <Grid container justifyContent="center" alignItems="center">
+                <Grid item xs={10}>
+                    <EsriData />
 
-                <Grid item xs={8}>
-                    <DataTable />
                 </Grid>
                 
             </Grid>
-        </>
+        </div>
     )
 }
 
